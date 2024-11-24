@@ -1,0 +1,15 @@
+{
+    "name": "jonatan/entrega-docker-compose",
+    "autoload": {
+        "psr-4": {
+            "Jonatan\\EntregaDockerCompose\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jonadevv",
+            "email": "jonadevv@gmail.com"
+        }
+    ],
+    "require": {}
+}
