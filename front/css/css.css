@@ -1,0 +1,106 @@
+body {
+    background-color: rgba(255, 153, 0, 0.727);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para asegurarte de que el contenido se centra verticalmente */
+    flex-direction: column;
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0; /* Elimina el margen superior para que esté más cerca de la parte superior */
+}
+
+form {
+    width: 300px; /* Puedes ajustar el tamaño del formulario */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadí una sombra para hacerlo más visible */
+    font-weight: bold;
+    color: rgb(58, 68, 186);;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%; /* Hace que los inputs se expandan para ocupar todo el ancho del formulario */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #9a9dff;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(58, 68, 186);
+
+}
+input:hover {
+    
+    color:black;
+    border: solid rgb(58, 68, 186) 2px;
+    
+}
+
+#enviar {
+    width: 300px; /* Hace que el botón se expanda para ocupar todo el ancho del formulario */
+    margin-top: 20px;
+    background-color: rgb(58, 68, 186);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+   
+}
+
+#enviar:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 68, 186);
+    font-weight: bold;
+    border: solid rgb(58, 68, 186) 2px;
+    box-sizing: border-box;
+}
+
+#verUser{
+    display: block;
+    width: 300px; /* Hace que el botón ocupe todo el ancho del formulario */
+    margin-top: 20px;
+    background-color: rgb(58, 68, 186);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#verUser:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 68, 186);
+    font-weight: bold;
+    border: solid rgb(58, 68, 186) 2px;
+}
+
+
+#usuarios{
+    display:none;
+    margin-top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

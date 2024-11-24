@@ -1,0 +1,39 @@
+services:
+
+  frontend:
+    build:
+      context: ./front  # Solo usará la carpeta ./front como contexto
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend  
+
+  backend:
+    build:
+      context: ./back  # Solo usará la carpeta ./back como contexto
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "8081:80"  
+    depends_on:
+      - db
+    networks:
+      - my_network
+
+  db:
+    image: mariadb:latest
+    container_name: db
+    ports:
+      - "3307:3306"
+    networks:
+      - my_network
+    
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: databaseTarea
+      
+networks:
+  my_network:
+    driver: bridge
